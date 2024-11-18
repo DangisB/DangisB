@@ -1,0 +1,97 @@
+/* Bendrai svetainei */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    color: #212529;
+}
+
+nav {
+    position: fixed;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background: #343a40;
+    padding: 20px;
+    border-radius: 0 10px 10px 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #495057;
+}
+
+main {
+    margin-left: 150px; /* Fiksuota vieta navigacijai */
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    font-family: 'Georgia', serif;
+    color: #343a40;
+}
+
+h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+p.lead {
+    font-size: 1.2em;
+    color: #6c757d;
+}
+
+img {
+    border: 5px solid #ddd;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#profile ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 1.1em;
+}
+
+#stats h3 {
+    color: #007bff;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+#stats p {
+    font-size: 1.2em;
+    color: #6c757d;
+}
+
+/* Responsyvus dizainas */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: row;
+        justify-content: space-around;
+        position: static;
+        transform: none;
+    }
+    main {
+        margin-left: 0;
+    }
+    #profile {
+        flex-direction: column;
+    }
+}
